@@ -9,15 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var countries: [Country] = CountryProviderDefault().getCountries()
+    @State var countries: [Country] = []
     
     var body: some View {
-        List(countries) { country in
-            Text(country.name)
-                .font(.title)
+        NavigationView {
+            List(countries) { country in
+                Text(country.name)
+                    .font(.title)
+            }
+            .emptyListPlaceholder(countries)
+            .padding(.horizontal)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button("Add") {
+                        countries = CountryProviderDefault().getCountries()
+                    }
+                    Button("Remove All") {
+                        countries = []
+                    }
+                }
+            }
         }
-        .emptyListPlaceholder(countries)
-        .padding()
     }
 }
 
