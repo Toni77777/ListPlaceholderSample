@@ -7,18 +7,17 @@
 
 import SwiftUI
 
-struct EmptyDataModifier: ViewModifier {
+struct EmptyDataModifier<Placeholder: View>: ViewModifier {
     
-    var items: [Any]
+    let items: [Any]
+    let placeholder: Placeholder
     
     @ViewBuilder
     func body(content: Content) -> some View {
         if !items.isEmpty {
             content
         } else {
-            Text("No Countries")
-                .font(.title)
-                .foregroundColor(.red)
+            placeholder
         }
     }
 }

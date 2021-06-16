@@ -9,7 +9,7 @@ import SwiftUI
 
 extension List {
     
-    func emptyListPlaceholder(_ items: [Any]) -> some View {
-        modifier(EmptyDataModifier(items: items))
+    func emptyListPlaceholder(_ items: [Any], _ placeholder: AnyView) -> some View {
+        modifier(EmptyDataModifier(items: items, placeholder: placeholder))
     }
 }

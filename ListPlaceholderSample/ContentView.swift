@@ -17,7 +17,7 @@ struct ContentView: View {
                 Text(country.name)
                     .font(.title)
             }
-            .emptyListPlaceholder(countries)
+            .emptyListPlaceholder(countries, AnyView(ListPlaceholderView()))
             .padding(.horizontal)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
