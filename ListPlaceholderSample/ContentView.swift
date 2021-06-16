@@ -13,11 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(countries) { country in
-                Text(country.name)
-                    .font(.title)
-            }
-            .emptyListPlaceholder(countries, AnyView(ListPlaceholderView()))
+            listView
             .padding(.horizontal)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -29,6 +25,29 @@ struct ContentView: View {
                     }
                 }
             }
+        }
+    }
+    
+    @ViewBuilder
+    var listView: some View {
+        if countries.isEmpty {
+            emptyListView
+        } else {
+            List(countries) { country in
+                Text(country.name)
+                    .font(.title)
+            }
+        }
+    }
+    
+    var emptyListView: some View {
+        ListPlaceholderView()
+    }
+
+    var countriesListView: some View {
+        List(countries) { country in
+            Text(country.name)
+                .font(.title)
         }
     }
 }
