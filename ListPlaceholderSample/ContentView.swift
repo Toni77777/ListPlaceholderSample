@@ -9,27 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var countries: [Country] = []
+    @State var countries: [Country] = [] // Data source
     
     var body: some View {
-        NavigationView {
-            List(countries) { country in
-                Text(country.name)
-                    .font(.title)
-            }
-            .emptyListPlaceholder(countries, AnyView(ListPlaceholderView()))
-            .padding(.horizontal)
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button("Add") {
-                        countries = CountryProviderDefault().getCountries()
-                    }
-                    Button("Remove All") {
-                        countries = []
-                    }
-                }
-            }
-        }
+        EmptyList(countries, listRowView: { country in
+            Text(country.name)
+                .font(.title)
+        }, placeholderView: {
+            Text("No Countries") // Placeholder
+                .font(.largeTitle)
+        })
     }
 }
 

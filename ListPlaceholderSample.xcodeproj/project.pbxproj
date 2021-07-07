@@ -11,11 +11,9 @@
 		004CB262267A4AB800275905 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB261267A4AB800275905 /* ContentView.swift */; };
 		004CB264267A4ABF00275905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004CB263267A4ABF00275905 /* Assets.xcassets */; };
 		004CB267267A4ABF00275905 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004CB266267A4ABF00275905 /* Preview Assets.xcassets */; };
-		004CB271267A4EAC00275905 /* EmptyDataModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB270267A4EAC00275905 /* EmptyDataModifier.swift */; };
-		004CB275267A4EFE00275905 /* List+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB274267A4EFE00275905 /* List+Placeholder.swift */; };
 		004CB27A267A50AB00275905 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB279267A50AB00275905 /* Country.swift */; };
 		004CB27E267A51A300275905 /* CountryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB27D267A51A300275905 /* CountryProvider.swift */; };
-		004CB282267A563400275905 /* ListPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB281267A563400275905 /* ListPlaceholderView.swift */; };
+		00AAE62D269605B900FB17E1 /* EmptyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AAE62C269605B900FB17E1 /* EmptyList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +23,9 @@
 		004CB263267A4ABF00275905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004CB266267A4ABF00275905 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		004CB268267A4ABF00275905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		004CB270267A4EAC00275905 /* EmptyDataModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataModifier.swift; sourceTree = "<group>"; };
-		004CB274267A4EFE00275905 /* List+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Placeholder.swift"; sourceTree = "<group>"; };
 		004CB279267A50AB00275905 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		004CB27D267A51A300275905 /* CountryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryProvider.swift; sourceTree = "<group>"; };
-		004CB281267A563400275905 /* ListPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceholderView.swift; sourceTree = "<group>"; };
+		00AAE62C269605B900FB17E1 /* EmptyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +61,7 @@
 				004CB278267A50A100275905 /* model */,
 				004CB25F267A4AB800275905 /* ListPlaceholderSampleApp.swift */,
 				004CB261267A4AB800275905 /* ContentView.swift */,
-				004CB270267A4EAC00275905 /* EmptyDataModifier.swift */,
-				004CB281267A563400275905 /* ListPlaceholderView.swift */,
-				004CB274267A4EFE00275905 /* List+Placeholder.swift */,
+				00AAE62C269605B900FB17E1 /* EmptyList.swift */,
 				004CB27D267A51A300275905 /* CountryProvider.swift */,
 				004CB263267A4ABF00275905 /* Assets.xcassets */,
 				004CB268267A4ABF00275905 /* Info.plist */,
@@ -162,12 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				004CB262267A4AB800275905 /* ContentView.swift in Sources */,
-				004CB271267A4EAC00275905 /* EmptyDataModifier.swift in Sources */,
-				004CB282267A563400275905 /* ListPlaceholderView.swift in Sources */,
 				004CB260267A4AB800275905 /* ListPlaceholderSampleApp.swift in Sources */,
 				004CB27E267A51A300275905 /* CountryProvider.swift in Sources */,
+				00AAE62D269605B900FB17E1 /* EmptyList.swift in Sources */,
 				004CB27A267A50AB00275905 /* Country.swift in Sources */,
-				004CB275267A4EFE00275905 /* List+Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
