@@ -9,8 +9,8 @@ import SwiftUI
 
 struct EmptyList<Items: RandomAccessCollection, ListRowView: View, PlaceholderView: View>: View where Items.Element: Identifiable {
     
-    private var items: Items
-    private var listRowView: (Items.Element) -> ListRowView
+    private let items: Items
+    private let listRowView: (Items.Element) -> ListRowView
     private let placeholderView: () -> PlaceholderView
     
     /// - Parameters:
