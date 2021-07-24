@@ -7,8 +7,8 @@ Article:
 - [medium](https://toxa95401.medium.com/empty-list-placeholder-swiftui-4553e0e79f8e)
 
 
-<div align="left"><img src="PlaceholderGif.gif" width="382px" height="100%"></div>
+<div align="left"><img src="Assets/PlaceholderGif.gif" width="382px" height="100%"></div>
 
-<div align="left"><img src="Placeholder.png" width="382px" height="100%"></div>
+<div align="left"><img src="Assets/Placeholder.png" width="382px" height="100%"></div>
 
-<div align="left"><img src="ListCountries.png" width="382px" height="100%"></div>
+<div align="left"><img src="Assets/ListCountries.png" width="382px" height="100%"></div>
